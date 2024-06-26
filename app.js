@@ -10,9 +10,9 @@ import userRoute from "./routes/userRoute.js";
 dotenv.config();
 
 const app = express();
-
+//cors config
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL,'https://chatfrontend-zxrx8uztx-vyshnav-kvs-projects.vercel.app/'],
     credentials: true
 }));
 app.use(morgan("dev"));

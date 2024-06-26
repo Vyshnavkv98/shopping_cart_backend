@@ -5,7 +5,7 @@ import { IPaymentInterface } from "../interfaces/doctorSlot.js";
 const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
 // const DOMAIN = 'https://medss.vercel.app/'
-const DOMAIN = 'http://localhost:5173/'
+const DOMAIN = 'https://chatfrontend-zxrx8uztx-vyshnav-kvs-projects.vercel.app'
 const paymentService = async ( req, res,paymentData) => {
   try {
     console.log(doctorData,'from payment');
